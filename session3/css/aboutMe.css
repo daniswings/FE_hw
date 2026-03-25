@@ -1,0 +1,174 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding-left: 20px;
+}
+
+header h1 {
+    border-bottom: 3px solid #fbcae0;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+
+nav.toc-box {
+    float:left;
+    position: sticky;
+    top: 20px;
+    box-sizing: border-box;
+    width: 230px;
+    border: 1px solid #c3c1c1;
+    background-color: #f1eeee;
+    padding: 10px;
+}
+
+.toc-title {
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+nav.toc-box ul {
+    list-style: none;
+    padding-left: 15px;
+    margin: 0;
+}
+
+nav.toc-box a {
+    text-decoration: none;
+    color: #0275d8;
+}
+
+nav.toc-box a:hover {
+    text-decoration: underline;
+}
+
+aside.profile-table {
+    margin-left: 260px;     
+    margin-bottom: 20px;
+    border: 1px solid #fbcae0;
+}
+
+.profile-title {
+    background-color: #fbcae0;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.dain-pic {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.table1 {
+    background-color: #fbcae0;
+    font-weight: bold;
+    width: 35%;
+    text-align: center;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #dee2e6;
+}
+
+#korean-national-flag {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.content {
+    margin-left:250px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-bottom: 2px solid #bdbebf;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #2b2a2a;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 3px;
+}
+
+#deleting-line {
+    text-decoration: line-through;
+    color: #888585;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 0.8em;
+    margin-top: 50px;
+}
+
+.bonusbox-whole {
+    position: relative; 
+    display: inline-block;
+}
+
+.bonusbox-num {
+    color: #0275d8;
+    font-size: 0.8em; 
+    position: relative; 
+    top: -0.5em;
+    cursor: pointer;
+}
+
+.bonusbox-text {
+    display: none;
+    position: absolute; 
+    bottom: 25px;
+
+    /* 에러 해결
+    1. 화면 밖 잘림 문제: bonusbox가 화면상 오른쪽 끝에 위치
+    -> 기존 left:0 등 left 기준 설정 시 브라우저 사이즈 조정에 따라 박스가 잘려서 안 보이는 현상 발생
+    -> 기준점 right로 변경해 박스가 화면 안쪽 배치되도록 함 */
+    right: -10px;
+    width: 250px;
+    background-color: #ffffff;
+    border: 1px solid #c8c6c6;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #353434;
+
+    /* 2. 텍스트 줄바꿈: 교안에 소개된 vw를 활용해 박스 너비 조절
+    -> but 박스 너비가 좁아져도 자동 줄바꿈 되지 않는 경우 발생
+    -> 검색 및 AI 활용을 통해 교안 외 내용인 강제 줄바꿈 속성(word-break 등) 추가 적용 */
+    white-space: normal; 
+    word-break: keep-all; 
+    overflow-wrap: break-word;
+}
+
+.bonusbox-whole:hover .bonusbox-text {
+    display: block; 
+}
+
+@media (max-width: 768px) {
+    .bonusbox-text {
+        width: 150px;
+        right: -10px;
+    }
+}
