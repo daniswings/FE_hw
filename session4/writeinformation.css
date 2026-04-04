@@ -2,18 +2,38 @@ body {
     margin:0;
     background-color: #1c1b1a;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-family: Pretendard;
 }
+.main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1440px;
+    gap: 120px;
+    padding-top: 80px;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0 20px 120px 20px;
+    align-items: flex-start;
+    box-sizing: border-box;
+    gap: 156px;
+}
+
 .header {
     display: flex;
+    width: 100%;
     height: 80px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
-    gap: 33px;
+    padding: 0 160px;
     align-self: stretch;
     background-color: #1c1b1a;
     position: fixed;
@@ -27,7 +47,6 @@ body {
     width:147px;
     height: 19px;
     display: flex;
-    padding: 0 80px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -54,24 +73,59 @@ ul {
 
 
 
+.mobile-banner {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    padding: 0 20px;
+}
 
-.main {
-    display: flex;
-    max-width: 940px;
-    padding: 120px 20px 40px 20px;
+.mobile-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.6px;
+    color: #fff;
+}
+
+.mobile-menu, .mobile-back {
+    width: 32px;
+    height: 32px;
+}
+
+.mobile-step {
+    display: none;
+    width: 100%;
+    padding: 24px 0;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 120px;
+    align-items: center;
+    align-self: stretch;
+}
+
+.mobile-stepbar {
+    width: 100%;
+}
+
+.mobile-button {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-next {
+    width: 100%;
+    height: 56px;
+    padding: 0 99px;
+    border-radius: 88px;
+    background-color: #ff7710;
+    color: #fff;;
 }
 
 .form {
-
+    width: 704px;
 }
-
-.form-title {
-
-}
-
 .step {
     align-self: stretch;
     font-size: 20px;
@@ -87,6 +141,7 @@ ul {
     line-height: 78px;
     letter-spacing: -1.56px;
     align-self: stretch;
+    margin: 0 0 52px 0;
 }
 
 .info {
@@ -128,6 +183,8 @@ ul {
 /* 추가: 실제 입력창인 input 태그 자체를 꾸며주는 코드! (가져온 수치 그대로 사용함) */
 .inputs input {
     align-self: stretch; 
+    width: 100%;
+    box-sizing: border-box;
     padding: 16px;
     border-radius: 9999px;
     background: #fff;
@@ -182,29 +239,169 @@ ul {
 
 
 
-@media (max-width: 768px) {
+
+.sidebar {
+    display: flex;
+    width: 290px;
+    padding: 40px 0 40px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 56px;
+}
+
+.sidebar-step {
+    display: flex;
+    padding: 0 24px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+
+.step-text-wrap {
+    flex-direction: column;
+
+}
+
+.step-text {
+    width: 135px;
+    align-items: flex-start;
+    margin: 40px 0;
+}
+
+.prev-next-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+.prev-btn, .next-btn {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.6px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 9999px;
+}
+.prev-btn {
+    background: #fff;
+}
+
+.next-btn {
+    background: #ff7710
+}
+
+
+
+
+.footer {
+    display: flex;
+    padding: 52px 160px;
+    align-items: flex-start;
+    gap: 86px;
+    align-self: stretch;
+    background-color: #292625;
+    width: 100%;
+}
+
+.footer-text {
+    display: flex;
+    width: 206px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    color: #d1cfcd
+}
+
+.footer-text1 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.36px;
+    margin: 0;
+}
+
+.footer-text2 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 104%;
+    letter-spacing: -0.7px;
+}
+
+.sns-icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.instagram-icon, .kakaotalk-icon {
+    width: 18px;
+    height: 18px;
+}
+
+
+
+
+
+
+@media (max-width: 990px) {
     
-    .banner {
+    .banner, .logo, .sidebar, .form-title {
         display: none;
     }
     
+    .mobile-banner, .mobile-button {
+        display: flex;
+    }
+
+    .header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+    
+
+    .mobile-step {
+        display: block;
+    }
+    
+    .mobile-button {
+        width: 100%
+    }
+
+    .content {
+        width: 100%;
+        gap: 0;
+    }
+    .form {
+        width: 100%; 
+    }
+
+    .inputs {
+        width: 100%;
+    }
     .each-form {
         flex-direction: column; 
         gap: 12px;
-        
     }
-
     .labels {
         width: 100%;
         height: auto; 
     }
-
+    
     .part-buttons {
-        flex-direction: column;
         width: 100%; 
     }
-
     .part-btn {
         width: 100%;
     }
+
 }

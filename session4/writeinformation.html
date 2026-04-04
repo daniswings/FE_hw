@@ -21,103 +21,147 @@
                 <li class="banner-option">합격자조회</li>
             </ul>
         </div>
+
+        <div class="mobile-banner">
+            <img class="mobile-back" src="../session4/img/icon_arrow_back.svg" alt="뒤로 가기">
+            <p class="mobile-title">서류 지원서 작성</p>
+            <img class="mobile-menu" src="../session4/img/icon_menu.svg" alt=" 햄버거바 메뉴">
+        </div>
     </header>
 
     <main class="main">
-        <section class="form">
-            <div class="form-title">
-                <p class="step">STEP 2</p>
-                <p class="put-info">인적사항 입력</p>
+        <div class="content">
+            <section class="form">
+                <div class="form-title">
+                    <p class="step">STEP 2</p>
+                    <p class="put-info">인적사항 입력</p>
+                </div>
+
+                <div class="mobile-step">
+                    <img class="mobile-stepbar" src="../session4/img/stepbar_mobile.svg" alt="모바일 스텝바">
+                </div>
+
+                <form class="info">
+                    <div class="each-form">
+                        <div class="labels">
+                            <label for="name">이름</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="text" id="name" placeholder="이름을 입력해 주세요">
+                        </div>
+                    </div>
+
+                    <div class="each-form">
+                        <div class="labels">
+                            <label for="phone">전화번호</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="tel" id="phone" placeholder="'-' 없이 전화번호를 입력해 주세요">
+                            <p class="cf">(예: 01012341234)</p>
+                        </div>
+                    </div>
+
+                    <div class="each-form">
+                        <div class="labels">
+                            <label for="email">메일주소</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="email" id="email" placeholder="dslions@duksung.ac.kr">
+                            <p class="cf">*입력하신 메일주소로 <span class="emphasize">합격자 통보</span>가 이루어집니다.<br><span class="emphasize">정확한 주소</span>를 입력해주세요.</p>
+                        </div>
+                    </div>
+
+                    <div class="each-form">
+                        <div class="labels">
+                            <label for="major">학과</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="text" id="major" placeholder="학과를 작성해 주세요">
+                            <div class="cf-group">
+                                <p class="cf">- 1학년</p>
+                                <p class="cf">본인이 속한 단과대 이름을 작성해주세요.</p>
+                                <p class="cf">(가상현실융합학과, 데이터사이언스학과, AI신약학과는 학과로 작성해주세요.)</p>
+                            </div>
+                            <div class="cf-group2">
+                                <p class="cf">- 2학년 이상</p>
+                                <p class="cf">복수전공 및 2전공일 경우 본전공/복수전공(혹은 부전공, 2전공)과 같이 작성해주세요.</p>
+                                <p class="cf">(예: 시각디자인전공/문화인류학전공)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each-form">
+                        <div class="labels">
+                            <label for="student-id">학번</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" id="student-id" placeholder="학번을 작성해 주세요">
+                            <p class="cf">(예: 20260101)</p>
+                        </div>
+                    </div>
+
+                    <div class="each-form">
+                        <div class="labels">
+                            <label for="status">학년/재학 여부</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="text" id="status" placeholder="학년/재학 여부를 작성해 주세요">
+                            <div class="cf-group">
+                                <p class="cf">2026학년도 1학기 기준으로 작성해 주세요.</p>
+                                <p class="cf">(예: 3학년/재학)</p>
+                            </div>
+                            <div class="cf-group2">
+                                <p class="cf">* 휴학생의 경우, 수료를 마친 학기 수를 입력해주세요.</p>
+                                <p class="cf">예) 2학년 2학기를 마치고 휴학한 경우 : 4학기/휴학</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each-form">
+                        <div class="labels">
+                            <label>지원하는 파트</label>
+                        </div>
+                        <div class="part-buttons">
+                            <button type="button" class="part-btn">기획/디자인</button>
+                            <button type="button" class="part-btn">프론트엔드</button>
+                            <button type="button" class="part-btn">백엔드</button>
+                        </div>
+                    </div>
+
+                    <div class="mobile-button">
+                        <button type="button" class="mobile-next">다음으로</button>
+                    </div>
+                </form>
+            </section>
+
+            <aside class="sidebar">
+                <div class="sidebar-step">
+                    <img class="step-bar" src="../session4/img/stepbar.svg" alt="스텝 바">
+                    <div class="step-text-wrap">
+                        <p class="step-text">개인정보수집안내</p>
+                        <p class="step-text">인적사항 입력</p>
+                        <p class="step-text">인적사항 입력</p>
+                        <p class="step-text">인적사항 입력</p>
+                    </div>
+                </div>
+                <div class="prev-next-btn">
+                    <button type="button" class="prev-btn">이전으로</button>
+                    <button type="button" class="next-btn">다음으로</button>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p class="footer-text1">덕성여대 멋쟁이사자처럼 14기 운영진</p>
+                <p class="footer-text2">&copy; 2026. likelion_ds all rights reserved.</p>
             </div>
-
-            <form class="info">
-                <div class="each-form">
-                    <div class="labels">
-                        <label for="name">이름</label>
-                    </div>
-                    <div class="inputs">
-                        <input type="text" id="name" placeholder="이름을 입력해 주세요">
-                    </div>
-                </div>
-
-                <div class="each-form">
-                    <div class="labels">
-                        <label for="phone">전화번호</label>
-                    </div>
-                    <div class="inputs">
-                        <input type="text" id="phone" placeholder="'-' 없이 전화번호를 입력해 주세요">
-                        <p class="cf">(예: 01012341234)</p>
-                    </div>
-                </div>
-
-                <div class="each-form">
-                    <div class="labels">
-                        <label for="email">메일주소</label>
-                    </div>
-                    <div class="inputs">
-                        <input type="text" id="email" value="dslions@duksung.ac.kr">
-                        <p class="cf">*입력하신 메일주소로 <span class="emphasize">합격자 통보</span>가 이루어집니다.<br><span class="emphasize">정확한 주소</span>를 입력해주세요.</p>
-                    </div>
-                </div>
-
-                <div class="each-form">
-                    <div class="labels">
-                        <label for="major">학과</label>
-                    </div>
-                    <div class="inputs">
-                        <input type="text" id="major" placeholder="학과를 작성해 주세요">
-                        <div class="cf-group">
-                            <p class="cf">- 1학년</p>
-                            <p class="cf">본인이 속한 단과대 이름을 작성해주세요.</p>
-                            <p class="cf">(가상현실융합학과, 데이터사이언스학과, AI신약학과는 학과로 작성해주세요.)</p>
-                        </div>
-                        <div class="cf-group2">
-                            <p class="cf">- 2학년 이상</p>
-                            <p class="cf">복수전공 및 2전공일 경우 본전공/복수전공(혹은 부전공, 2전공)과 같이 작성해주세요.</p>
-                            <p class="cf">(예: 시각디자인전공/문화인류학전공)</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="each-form">
-                    <div class="labels">
-                        <label for="student-id">학번</label>
-                    </div>
-                    <div class="inputs">
-                        <input type="text" id="student-id" placeholder="학번을 작성해 주세요">
-                        <p class="cf">(예: 20260101)</p>
-                    </div>
-                </div>
-
-                <div class="each-form">
-                    <div class="labels">
-                        <label for="status">학년/재학 여부</label>
-                    </div>
-                    <div class="inputs">
-                        <input type="text" id="status" placeholder="학년/재학 여부를 작성해 주세요">
-                        <div class="cf-group">
-                            <p class="cf">2026학년도 1학기 기준으로 작성해 주세요.</p>
-                            <p class="cf">(예: 3학년/재학)</p>
-                        </div>
-                        <div class="cf-group2">
-                            <p class="cf">* 휴학생의 경우, 수료를 마친 학기 수를 입력해주세요.</p>
-                            <p class="cf">예) 2학년 2학기를 마치고 휴학한 경우 : 4학기/휴학</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="each-form">
-                    <div class="labels">
-                        <label>지원하는 파트</label>
-                    </div>
-                    <div class="part-buttons">
-                        <button type="button" class="part-btn">기획/디자인</button>
-                        <button type="button" class="part-btn">프론트엔드</button>
-                        <button type="button" class="part-btn">백엔드</button>
-                    </div>
-                </div>
-            </form>
-        </section>
+            <div class="sns-icon">
+                <img class="instagram-icon" src="../session4/img/icon_instagram.svg" alt="인스타그램 로고">
+                <img class="kakaotalk-icon" src="../session4/img/icon_kakaotalk.svg" alt="카카오톡 로고">
+            </div>
+        </footer>
     </main>
+
 </body>
 </html>
