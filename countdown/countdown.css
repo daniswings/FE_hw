@@ -1,0 +1,38 @@
+.box {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #285334;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b0e2be;
+    border-radius: 10%;
+    gap: 20px;
+}
+
+.business-box, .countdown-box {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.business-hour, .countdown {
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    background-color: #5b3618;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10%;
+    
+}
+
+.time, .status{
+    color: #5b3618;
+    font-size: 14px;
+}
