@@ -2,11 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
-  border-width: 1px;
-  border-radius: 8px;
-  font-size: 16px;
-  padding: 8px 16px;
-  cursor: pointer;
+    border-width: 1px;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+    width: 150px;
+    border: none;
 `;
 
 export default function Button(props) {

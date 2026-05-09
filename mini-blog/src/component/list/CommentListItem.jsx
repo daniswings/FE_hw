@@ -5,15 +5,15 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: 16px;
+    padding: 8px 16px;
     border: 1px solid #ccc;
     border-radius: 8px;
     cursor: pointer;
-    width: 700px;
 `;
 
 const ContentText = styled.p`
     font-size: 16px;
+    margin: 0;
 `;
 
 export default function CommentListItem(props) {

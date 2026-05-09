@@ -9,12 +9,10 @@ const Wrapper = styled.div`
     border: 1px solid #ccc;
     border-radius: 8px;
     cursor: pointer;
-    width: 700px;
 `;
 
 const Title = styled.div`
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 16px;
 `;
 
 export default function PostListItem(props) {

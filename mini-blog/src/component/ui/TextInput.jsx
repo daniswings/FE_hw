@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledTextInput = styled.input`
-    width: 700px;
-    height: 400px;
+    width: 100%;
+    /* PostViewPage에서 넘겨준 height={40}이라는 props을 받아 사용 */
+    height: ${(props) => props.height}px;
     padding : 16px;
     font-size: 16px;
 `;

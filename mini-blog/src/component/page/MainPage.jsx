@@ -9,17 +9,24 @@ const Wrapper = styled.div`
     flex-direction: column;
     gap: 8px;
     padding: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
     cursor: pointer;
-    width: 700px;
+    width: 100%;
+    align-items: center;
 `;
 
 const Container = styled.div`
-    width: 90%;
+    width: 80%;
+    height: 40px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+`;
+
+const DainsMiniBlog = styled.p`
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
 `;
 
 export default function MainPage() {
@@ -39,8 +46,12 @@ export default function MainPage() {
                 onClick={() => navigate('/post-write')} 
                 />
 
+                <DainsMiniBlog>다인의 미니 블로그</DainsMiniBlog>
+
+
                 <PostList posts={posts} 
                 onClickItem={(item) => navigate(`/post/${item.id}`)} />
+
             </Container>
         </Wrapper>
     );

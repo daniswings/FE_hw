@@ -9,17 +9,24 @@ const Wrapper = styled.div`
     flex-direction: column;
     gap: 8px;
     padding: 16px;
-    border: 1px solid #ccc;
     border-radius: 8px;
     cursor: pointer;
-    width: 700px;
+    align-items: center;
 `;
 
 const Container = styled.div`
-    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    max-width: 720px;
+    width: 100%;
+`;
+
+const DainsMiniBlog = styled.p`
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
 `;
 
 export default function PostWritePage() {
@@ -49,8 +56,9 @@ export default function PostWritePage() {
     return (
         <Wrapper>
             <Container>
+                <DainsMiniBlog>다인의 미니 블로그</DainsMiniBlog>
                 <TextInput
-                    height={20}
+                    height={40}
                     value={title}
                     onChange={(event) => {
                         setTitle(event.target.value);
@@ -58,7 +66,7 @@ export default function PostWritePage() {
                     placeholder="제목을 입력하세요"
                 />
                 <TextInput
-                    height={400}
+                    height={200}
                     value={content}
                     onChange={(event) => {
                         setContent(event.target.value);

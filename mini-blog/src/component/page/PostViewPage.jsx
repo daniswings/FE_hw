@@ -10,17 +10,16 @@ const Wrapper = styled.div`
     flex-direction: column;
     gap: 8px;
     padding: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
     cursor: pointer;
-    width: 700px;
+    align-items: center;
 `;
 
 const Container = styled.div`
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    max-width: 720px;
 `;
 
 const PostContainer = styled.div`
@@ -40,7 +39,7 @@ const ContentText = styled.p`
 
 const CommentLabel = styled.p`
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
 `;
 
 export default function PostViewPage() {
@@ -100,7 +99,7 @@ export default function PostViewPage() {
                 <CommentList comments={post.comments} />
 
                 <TextInput
-                    height={40}
+                    height={20}
                     value={comment}
                     onChange={(event) => {
                         setComment(event.target.value);
